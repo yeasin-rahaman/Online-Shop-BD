@@ -23,9 +23,9 @@ const showProducts = (products) => {
     </div>
     <div class="card-footer footer-custom">
         <h2>Price: $ ${product.price}</h2>
-        <div class="d-flex justify-content-between">
+        <div class="">
             <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn"
-              class="buy-now btn btn-success btn-hover color-1">add to cart</button>
+              class="btn btn-hover color-1">add to cart</button>
               <button onclick="productDetails('${product.description}')" id="addToCart-btn"
               class="btn  btn-hover color-2">Details</button>
         </div>
@@ -104,12 +104,9 @@ const productDetails = details => {
 
   document.getElementById('detailss').innerHTML = `
   <h4>Product Details</h4>
-     <p class="mt-2">${details} </p>
+     <p class="mt-2">${details.substring(0, 300)} </p>
   `
-}
-
-
-
+};
 
 
 
