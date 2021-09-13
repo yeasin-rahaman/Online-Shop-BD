@@ -100,14 +100,13 @@ loadProducts();
 
 
 // Show Product details 
-const productDetails = productDetails => {
+const productDetails = details => {
 
-  document.getElementById('product-Details').innerHTML = ` 
-  <h3 class="text-center  mt-5">Product Details</h3>
-  <hr>
-     <p class=" text-center p-2">${productDetails} </p>
+  document.getElementById('detailss').innerHTML = `
+  <h4>Product Details</h4>
+     <p class="mt-2">${details.substring(0, 300)} </p>
   `
-}
+};
 
 
 
