@@ -102,7 +102,7 @@ background-image: url(../images/bg-3.gif);
     text-align:center;
     border: none;
     background-size: 300% 100%;
-    moz-transition: all .4s ease-in-out;
+
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -110,7 +110,7 @@ background-image: url(../images/bg-3.gif);
   /* custome button  */
   .btn-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
+
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
