@@ -6,6 +6,7 @@ const loadProducts = () => {
 
 // show all product
 const showProducts = (products) => {
+
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.image;
@@ -19,21 +20,26 @@ const showProducts = (products) => {
             <h5>Rating by People: ${product.rating.rate} <i class="fa fa-star rating"
                     aria-hidden="true"></i></h5>
             <p>How many people rated : ${product.rating.count}</p>
-
     </div>
     <div class="card-footer footer-custom">
         <h2>Price: $ ${product.price}</h2>
         <div class="d-flex justify-content-between">
             <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn"
-                class="buy-now btn btn-success btn-hover color-1">add to cart</button>
-            <button id="details-btn" class="btn  btn-hover color-2">Details</button>
+              class="buy-now btn btn-success btn-hover color-1">add to cart</button>
+              <button onclick="productDetails('${product.description}')" id="addToCart-btn"
+              class="btn  btn-hover color-2">Details</button>
         </div>
     </div>
 </div>
       `;
     document.getElementById("all-products").appendChild(div);
+
+
   }
 };
+
+
+
 // price chart update 
 let count = 0;
 const addToCart = (id, price) => {
@@ -89,4 +95,21 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = (grandTotal.toFixed(2));
 };
+
 loadProducts();
+
+
+// Show Product details 
+const productDetails = details => {
+
+  document.getElementById('detailss').innerHTML = `
+  <h4>Product Details</h4>
+     <p class="mt-2">${details} </p>
+  `
+}
+
+
+
+
+
+
