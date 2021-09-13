@@ -1,15 +1,20 @@
+
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  background-color: #e4ddf4 !important;
 
 }
+/* search field  */
 .input-field{
   width: 50%;
   display: flex;
   margin: auto;
   padding: 50px;
 }
+/* all product container  */
 #all-products {
+ padding-left: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
@@ -18,8 +23,13 @@ body {
   margin: auto;
   align-items: center;
   justify-content: center;
+  grid-gap: 20px
 }
+
+/* single product cart  */
 .single-product {
+  background: white;
+  border-radius: 20px;
   padding: 10px;
   transition: 0.6s;
 }
@@ -32,7 +42,11 @@ body {
   width: 150px;
   height: 150px;
 }
+
+/* price  table  */
 .cart {
+  background: white;
+  border-radius: 20px;
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
@@ -44,6 +58,71 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.btn-hover {
+  width: 120px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 40px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+/* custome button  */
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  border-radius: 50px;
+}
+.btn-hover.color-2 {
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  border-radius: 50px;
+}
+.btn-hover.color-9 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  border-radius: 50px;
+}
+.search.color-11 {
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+.rating{
+  color: goldenrod;
+}
+
+
+/* media query  */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
