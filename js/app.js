@@ -11,17 +11,25 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product">
-      <div>
-    <img class="product-image" src=${image}></img>
-      </div>
-      <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
-      <p>Rating by People:${product.rating.rate} <i class="fa fa-star rating" aria-hidden="true"></i></p>
-      <p>How many people rated : ${product.rating.count}</p>
-      <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success btn-hover color-1">add to cart</button>
-      <button id="details-btn" class="btn  btn-hover color-2">Details</button></div>
+    div.innerHTML = `<div class="card single-product">
+    <img class="product-image mx-auto" src=${image}></img>
+    <div class="card-body">
+        <h3 class="card-title">${product.title}</h3>
+        <p5>Category: ${product.category}</p>
+            <h5>Rating by People: ${product.rating.rate} <i class="fa fa-star rating"
+                    aria-hidden="true"></i></h5>
+            <p>How many people rated : ${product.rating.count}</p>
+
+    </div>
+    <div class="card-footer footer-custom">
+        <h2>Price: $ ${product.price}</h2>
+        <div class="d-flex justify-content-between">
+            <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn"
+                class="buy-now btn btn-success btn-hover color-1">add to cart</button>
+            <button id="details-btn" class="btn  btn-hover color-2">Details</button>
+        </div>
+    </div>
+</div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
