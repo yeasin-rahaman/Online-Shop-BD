@@ -13,7 +13,7 @@ background-image: url(../images/bg-3.gif);
     font-weight: bolder;
   }
   .header h1{
-    /* color: white; */
+    color: white;
     font-weight: 900;
   }
   .input-field{
@@ -94,7 +94,7 @@ background-image: url(../images/bg-3.gif);
     font-weight: 600;
     color: #fff;
     cursor: pointer;
-    margin: 20px;
+    margin: 10px;
     height: 40px;
     text-align:center;
     border: none;
