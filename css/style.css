@@ -53,7 +53,7 @@ background-image: url(../images/bg-3.gif);
     width: 400px;
     /* border: 1px solid green; */
     padding: 10px;
-    box-shadow: 10px 10px 20px gray;
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     margin-right: 20px;
     position: fixed;
     
@@ -79,7 +79,7 @@ background-image: url(../images/bg-3.gif);
     transition: 0.6s;
   }
   .single-product:hover {
-    box-shadow: 4px 4px 7px gray;
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     border-radius: 50px;
     border: 1px solid cyan;
   }
@@ -136,20 +136,21 @@ background-image: url(../images/bg-3.gif);
     border-radius: 50px;
   }
   .search.color-11 {
-    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  
+    box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
   }
   
   .rating{
     color: goldenrod;
   }
   @media only screen and (max-width: 760px) {
-    .cart { 
-      position: static;
-    }
-    .card-container{
-      margin-left: 0px;
-    }
-    .backGround{
-      padding: 5px;
-    }
+        .cart { 
+          position: static;
+        }
+        .card-container{
+          margin-left: 0px;
+        }
+        .backGround{
+          padding: 5px;
+        }
     }
