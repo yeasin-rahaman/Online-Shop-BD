@@ -144,10 +144,12 @@ background-image: url(../images/bg-3.gif);
   }
   @media only screen and (max-width: 760px) {
     .cart { 
-      /* position: fixed;
-      top: 0; */
+      position: static;
     }
     .card-container{
       margin-left: 0px;
+    }
+    .backGround{
+      padding: 5px;
     }
     }
