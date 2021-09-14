@@ -96,9 +96,6 @@ const updateTotal = () => {
   document.getElementById("total").innerText = (grandTotal.toFixed(2));
 };
 
-loadProducts();
-
-
 // Show Product details 
 const productDetails = details => {
 
@@ -107,6 +104,8 @@ const productDetails = details => {
      <p class="mt-2">${details.substring(0, 300)} </p>
   `
 };
+// load api data
+loadProducts();
 
 
 
