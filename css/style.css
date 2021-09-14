@@ -32,7 +32,7 @@ background-image: url(../images/bg-3.gif);
 /* single product cart  */
 .single-product {
     height: 100%;
-    background: white;
+    background: #FFFAFA;
     border-radius: 20px;
     padding: 10px;
     transition: 0.6s;
@@ -48,7 +48,7 @@ background-image: url(../images/bg-3.gif);
 
 /* price  table  */
 .cart {
-    background: white;
+    background: #FFFAFA;
     border-radius: 20px;
     width: 400px;
     /* border: 1px solid green; */
